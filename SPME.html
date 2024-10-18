@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Emotion Recognition App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SPME.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#try-it-out">Try it Out</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Discover the Emotion in Your Voice</h1>
+            <p>Our cutting-edge speech emotion recognition technology analyzes your voice to detect underlying emotions.</p>
+            <a href="#try-it-out" class="cta-button">Upload Your Audio</a>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How it Works</h2>
+            <!-- Add content explaining how the technology works -->
+        </section>
+
+        <section id="try-it-out">
+            <h2>Try it Out</h2>
+            <div class="file-upload-area" id="dropZone">
+                <p>Drag and drop your audio file here or click to upload</p>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept="audio/*" hidden>
+                    <button type="button" id="uploadButton">Choose File</button>
+                    <button type="submit">Analyze</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results" style="display: none;">
+            <h2>Results</h2>
+            <div id="emotionDisplay"></div>
+            <canvas id="probabilityChart"></canvas>
+            <div id="waveform"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our speech emotion recognition technology and its applications.</p>
+            <div class="faq-accordion">
+                <h3>Frequently Asked Questions</h3>
+                <!-- Add FAQ items here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Speech Emotion Recognition App. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.6/wavesurfer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="SPMEV.js"></script>
+</body>
+</html>
